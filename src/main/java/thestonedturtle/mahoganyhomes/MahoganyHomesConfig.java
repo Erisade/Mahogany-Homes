@@ -112,4 +112,16 @@ public interface MahoganyHomesConfig extends Config
 	{
 		return true;
 	}
+	
+	@ConfigItem(
+		keyName = "timeOutLength",
+		name = "Time Until Overlay Timeout",
+		description = "Configures the default timeout length",
+		position = 7
+	)
+	default int timeOutLength()
+	{
+		return 5;
+	}
+	
 }
